@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+.outlines {
+  height: 4px;
+  background-color: #3930c6;
+  position: absolute;
+  bottom: 0;
+  transition: 0.4s;
+}
+.home {
+  background-image: url("../img/bg-shape.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 55%;
+}
+.connectID {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 4%;
+  left: 3%;
+}
+.stick {
+  left: 76px;
+  top: 64%;
+  width: 3px;
+  height: 40px;
+  background-color: #000000;
+}
+.mouseJump {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4%;
+  box-shadow: 0px 0px 20px lightslategrey;
+}
+.justifyText {
+  text-align: justify;
+}
+.bg {
+  background-color: #ffffffe1;
+  backdrop-filter: blur(1px);
+}
+.bottomB {
+  border-bottom: 1px solid #ede4e4;
+}
+.pricing {
+  background-color: #d5c8f3;
+}
+.bgAbout {
+  background-image: url("../img/bg-2.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+.bgService {
+  background-image: url("../img/bg-3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.footer {
+  background-image: url("../img/footer-2.svg"), url("../img/footer-1.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.allClr {
+  color: #ffffff;
+}
+.active {
+  color: red !important;
+}
+
+li {
+  list-style: none;
+}
+.infinate {
+  animation-iteration-count: 3;
+}
+@media (min-width: 992px) {
+  .relatives {
+    position: relative;
+  }
+}
+@media (max-width: 991px) {
+  .outlines {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    background-size: 80rem;
+  }
+  .animate__slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: unset;
+  }
+}
+@media (max-width: 576px) {
+  .footer {
+    background-size: cover;
+  }
+  .wid {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+  .secWid {
+    width: 30% !important;
+    padding: 7px 0px !important;
+  }
+  .connectID {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 1%;
+    bottom: 4%;
+    left: unset;
+  }
+}
+@media (min-height: 760px) {
+  .dNone {
+    display: block !important;
+  }
+}
