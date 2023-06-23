@@ -46,9 +46,6 @@ $(".slick").slick({
         speed: 200,
       },
     },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ],
 });
 

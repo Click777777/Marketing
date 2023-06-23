@@ -12,23 +12,6 @@ BAR.addEventListener("click", () => {
     BAR.classList.add("fa-bars");
   }
 });
-// let navArr = document.querySelectorAll(".nav-item");
-
-// let userTouch = (e) => {
-//   let getClicked = e.target;
-//   let widthClicked = getClicked.offsetWidth;
-//   let leftClicked = getClicked.offsetLeft;
-//   outlines.style.width = `${widthClicked}px`;
-//   outlines.style.transform = `translateX(${leftClicked}px)`;
-// };
-// for (let index = 0; index < navArr.length; index++) {
-//   const element = navArr[index];
-//   element.addEventListener("click", userTouch);
-//   if (index === 0) {
-//     let homeWidth = element.offsetWidth;
-//     outlines.style.width = `${homeWidth}px`;
-//   }
-// }
 
 let move = () => {
   let scrollY = window.pageYOffset;
@@ -45,6 +28,7 @@ let move = () => {
     }
   });
 };
+
 const sections = document.querySelectorAll("section[id]");
 let firstHome = document.querySelector(`.payHtar a[href*=home]`);
 let widthClicked = home.offsetWidth;
